@@ -20,9 +20,9 @@
         </div>
 
         <div class="nav-right">
-            <input type="text" placeholder="Enter destination or keyword">
-            <button>Search</button>
-            <button>Reset</button>
+           <input type="text" id="searchInput" placeholder="Enter keyword">
+            <button onclick="searchRecommendations()">Search</button>
+            <button onclick="document.getElementById('results').innerHTML=''">Reset</button>
         </div>
     </nav>
 
@@ -47,5 +47,7 @@
         </div>
     </section>
 
+    <div id="results"></div>
+    <script src="travel_recommendation.js"></script>
 </body>
 </html>
